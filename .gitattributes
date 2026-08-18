@@ -1,0 +1,6 @@
+# Co nie wchodzi do archiwum budowanego przez `git archive`, czyli do paczki
+# instalowanej na cudzych witrynach. Testy i pliki narzędziowe zostają
+# w repozytorium, gdzie są potrzebne, i wypadają z wydania, gdzie są balastem.
+/tests            export-ignore
+/.gitattributes   export-ignore
+/.gitignore       export-ignore
