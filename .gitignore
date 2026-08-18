@@ -1,0 +1,16 @@
+# Dependencies and build artefacts
+node_modules/
+vendor/
+build/
+dist/
+*.zip
+
+# Local tooling
+.idea/
+.vscode/
+*.swp
+*~
+
+# System files
+.DS_Store
+Thumbs.db

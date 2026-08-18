@@ -1,0 +1,60 @@
+/*
+ * Settings screen.
+ *
+ * The matrix is the only thing here that needs help: it grows one column per
+ * member of staff, so it has to scroll sideways without taking the page with
+ * it, and the event name has to stay readable while it does.
+ */
+
+.push-notify-matrix-wrap {
+	overflow-x: auto;
+	max-width: 100%;
+	margin-bottom: 1em;
+}
+
+.push-notify-matrix {
+	min-width: 40em;
+}
+
+.push-notify-matrix th[scope="row"] {
+	min-width: 14em;
+	font-weight: 600;
+}
+
+.push-notify-matrix th[scope="row"] code {
+	display: block;
+	font-size: 11px;
+	font-weight: 400;
+	color: #646970;
+	background: none;
+	padding: 0;
+}
+
+.push-notify-matrix .push-notify-group th {
+	background: #f0f0f1;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: .04em;
+}
+
+.push-notify-matrix .push-notify-person {
+	white-space: nowrap;
+	vertical-align: bottom;
+}
+
+.push-notify-matrix .push-notify-muted {
+	display: block;
+	font-weight: 400;
+	font-size: 11px;
+	color: #b32d2e;
+}
+
+.push-notify-matrix .push-notify-cell {
+	text-align: center;
+}
+
+/* A checkbox in a wide table is a small target; give it some room. */
+.push-notify-matrix .push-notify-cell label {
+	display: inline-block;
+	padding: 6px 10px;
+}

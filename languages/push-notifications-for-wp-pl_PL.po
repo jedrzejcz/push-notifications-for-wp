@@ -1,0 +1,410 @@
+# Polish translation for Push Notifications for WP.
+# Copyright (C) 2026
+# This file is distributed under the same license as the plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Push Notifications for WP 0.1.0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pl_PL\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+
+#. Plugin Name of the plugin
+#: push-notifications-for-wp.php
+msgid "Push Notifications for WP"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: push-notifications-for-wp.php
+msgid "https://github.com/jedrzejcz/push-notifications-for-wp"
+msgstr ""
+
+#. Description of the plugin
+#: push-notifications-for-wp.php
+msgid "Sends events from your site to the phones of the people who run it, one row per event and one column per person. Delivered through Pushover."
+msgstr "Wysyła zdarzenia z Twojej witryny na telefony osób, które ją prowadzą: wiersz na zdarzenie, kolumna na osobę. Doręcza przez Pushover."
+
+#. Author of the plugin
+#: push-notifications-for-wp.php
+msgid "Jędrzej Czerwiński"
+msgstr ""
+
+#. Author URI of the plugin
+#: push-notifications-for-wp.php
+msgid "https://github.com/jedrzejcz"
+msgstr ""
+
+#: includes/class-events.php:115
+msgid "Content"
+msgstr "Treść"
+
+#: includes/class-events.php:116
+msgid "Users"
+msgstr "Użytkownicy"
+
+#: includes/class-events.php:117
+msgid "Other"
+msgstr "Inne"
+
+#: includes/class-events.php:138
+msgid "Comment awaiting moderation"
+msgstr "Komentarz czeka na moderację"
+
+#: includes/class-events.php:144
+msgid "New account registered"
+msgstr "Zarejestrowano nowe konto"
+
+#. translators: %d: number of comments waiting for moderation
+#: includes/class-events.php:216
+#, php-format
+msgid "%d comment is waiting for moderation."
+msgid_plural "%d comments are waiting for moderation."
+msgstr[0] "%d komentarz czeka na moderację."
+msgstr[1] "%d komentarze czekają na moderację."
+msgstr[2] "%d komentarzy czeka na moderację."
+
+#: includes/class-events.php:235
+msgid "New account"
+msgstr "Nowe konto"
+
+#. translators: %s: role name of the new account
+#: includes/class-events.php:239
+#, php-format
+msgid "Somebody registered with the role %s."
+msgstr "Ktoś zarejestrował konto o roli %s."
+
+#: includes/class-events.php:242
+msgid "Somebody registered an account."
+msgstr "Ktoś zarejestrował konto."
+
+#. translators: %d: number of further events suppressed by the throttling window
+#: includes/class-message.php:52
+#, php-format
+msgid "(%d more since the last notification)"
+msgid_plural "(%d more since the last notification)"
+msgstr[0] "(i %d kolejne zdarzenie od ostatniego powiadomienia)"
+msgstr[1] "(i %d kolejne zdarzenia od ostatniego powiadomienia)"
+msgstr[2] "(i %d kolejnych zdarzeń od ostatniego powiadomienia)"
+
+#: includes/class-message.php:68
+msgid "Open in the admin"
+msgstr "Otwórz w panelu"
+
+#: includes/class-message.php:138
+#: includes/class-settings-page.php:365
+msgid "Test notification"
+msgstr "Powiadomienie próbne"
+
+#. translators: %s: shop name
+#: includes/class-message.php:141
+#, php-format
+msgid "This is a test notification from %s. If you can read it, the channel works."
+msgstr "To jest powiadomienie próbne z witryny %s. Jeśli je czytasz, kanał działa."
+
+#: includes/class-message.php:145
+msgid "Open the settings screen"
+msgstr "Otwórz ekran ustawień"
+
+#: includes/class-profile-fields.php:44
+#: includes/class-settings-page.php:43
+#: includes/class-settings-page.php:44
+#: includes/class-settings-page.php:131
+msgid "Push notifications"
+msgstr "Powiadomienia push"
+
+#: includes/class-profile-fields.php:48
+msgid "Pushover user key"
+msgstr "Klucz użytkownika Pushover"
+
+#: includes/class-profile-fields.php:56
+msgid "Install the Pushover app, open it and copy the user key shown on its main screen. Leave empty to stop being a possible recipient."
+msgstr "Zainstaluj aplikację Pushover, otwórz ją i skopiuj klucz użytkownika z jej ekranu głównego. Puste pole oznacza rezygnację z odbierania powiadomień."
+
+#. translators: %s: reason returned by Pushover
+#: includes/class-profile-fields.php:67
+#, php-format
+msgid "Pushover rejected this key: %s"
+msgstr "Pushover odrzucił ten klucz: %s"
+
+#: includes/class-profile-fields.php:76
+msgid "Delivery"
+msgstr "Doręczanie"
+
+#: includes/class-profile-fields.php:81
+msgid "Do not send me notifications"
+msgstr "Nie wysyłaj mi powiadomień"
+
+#: includes/class-profile-fields.php:85
+msgid "Silences every notification for this account without touching the assignments made in the site settings. Useful while away."
+msgstr "Wycisza wszystkie powiadomienia dla tego konta, nie ruszając przypisań z ustawień witryny. Przydaje się na czas nieobecności."
+
+#. translators: %d: HTTP status code
+#: includes/class-pushover-client.php:98
+#, php-format
+msgid "HTTP %d without an explanation"
+msgstr "HTTP %d bez wyjaśnienia"
+
+#: includes/class-queue.php:52
+msgid "Event is not registered."
+msgstr "Zdarzenie nie jest zarejestrowane."
+
+#. translators: 1: attempt number, 2: reason
+#: includes/class-queue.php:188
+#, php-format
+msgid "attempt %1$d failed: %2$s"
+msgstr "próba %1$d nieudana: %2$s"
+
+#: includes/class-settings-page.php:124
+msgid "You are not allowed to configure notifications for this site."
+msgstr "Nie masz uprawnień do konfigurowania powiadomień w tej witrynie."
+
+#: includes/class-settings-page.php:139
+#: includes/class-settings-page.php:205
+msgid "Application token"
+msgstr "Klucz aplikacji"
+
+#: includes/class-settings-page.php:142
+msgid "Who gets what"
+msgstr "Kto dostaje co"
+
+#: includes/class-settings-page.php:159
+msgid "from a constant in wp-config.php"
+msgstr "ze stałej w wp-config.php"
+
+#: includes/class-settings-page.php:160
+msgid "from an environment variable"
+msgstr "ze zmiennej środowiskowej"
+
+#: includes/class-settings-page.php:161
+msgid "from the site database"
+msgstr "z bazy danych witryny"
+
+#: includes/class-settings-page.php:162
+msgid "not set anywhere"
+msgstr "nieustawiony"
+
+#: includes/class-settings-page.php:169
+msgid "The channel is on."
+msgstr "Kanał jest włączony."
+
+#: includes/class-settings-page.php:170
+msgid "The channel is off: nothing is sent until an application token is set."
+msgstr "Kanał jest wyłączony: nic nie zostanie wysłane, dopóki nie ustawisz klucza aplikacji."
+
+#. translators: %s: where the application token comes from
+#: includes/class-settings-page.php:174
+#, php-format
+msgid "Application token %s."
+msgstr "Klucz aplikacji %s."
+
+#. translators: %d: number of notifications sent in the last hour
+#: includes/class-settings-page.php:188
+#, php-format
+msgid "%d notifications went out in the last hour. That is usually a sign of something looping rather than of a busy site."
+msgstr "W ostatniej godzinie wyszło %d powiadomień. Zwykle oznacza to pętlę, a nie ruch w witrynie."
+
+#: includes/class-settings-page.php:217
+msgid "The token comes from the site configuration, so the value stored in the database is not used. Remove it there to edit the token here."
+msgstr "Klucz pochodzi z konfiguracji witryny, więc wartość zapisana w bazie nie jest używana. Usuń go stamtąd, żeby móc edytować klucz tutaj."
+
+#: includes/class-settings-page.php:226
+msgid "Create an application at pushover.net/apps and paste its API token here. Leave the field empty to keep the current token."
+msgstr "Załóż aplikację na pushover.net/apps i wklej tutaj jej klucz API. Puste pole zostawia dotychczasowy klucz."
+
+#. translators: %s: masked token
+#: includes/class-settings-page.php:239
+#, php-format
+msgid "Remove the stored token (%s)"
+msgstr "Usuń zapisany klucz (%s)"
+
+#: includes/class-settings-page.php:260
+msgid "Nobody can receive notifications yet. Everyone who should get them has to open their own profile and paste their Pushover user key there."
+msgstr "Nikt nie może jeszcze odbierać powiadomień. Każdy, kto ma je dostawać, musi otworzyć swój profil i wkleić tam swój klucz użytkownika Pushover."
+
+#: includes/class-settings-page.php:277
+#: includes/class-settings-page.php:406
+msgid "Event"
+msgstr "Zdarzenie"
+
+#: includes/class-settings-page.php:278
+msgid "Urgency"
+msgstr "Pilność"
+
+#: includes/class-settings-page.php:283
+msgid "(muted)"
+msgstr "(wyciszony)"
+
+#: includes/class-settings-page.php:320
+msgid "Normal"
+msgstr "Zwykła"
+
+#: includes/class-settings-page.php:323
+msgid "Urgent (sound, ignores quiet hours)"
+msgstr "Pilna (dźwięk, przebija tryb cichy)"
+
+#. translators: 1: event name, 2: person
+#: includes/class-settings-page.php:334
+#, php-format
+msgid "%1$s to %2$s"
+msgstr "%1$s do %2$s"
+
+#: includes/class-settings-page.php:370
+#: includes/class-settings-page.php:407
+msgid "Recipient"
+msgstr "Odbiorca"
+
+#: includes/class-settings-page.php:379
+msgid "Send a test notification"
+msgstr "Wyślij powiadomienie próbne"
+
+#: includes/class-settings-page.php:382
+msgid "Sends one notification marked as a test. It is not recorded as a site event."
+msgstr "Wysyła jedno powiadomienie oznaczone jako próbne. Nie jest liczone jako zdarzenie witryny."
+
+#: includes/class-settings-page.php:396
+msgid "Recent deliveries"
+msgstr "Ostatnie wysyłki"
+
+#: includes/class-settings-page.php:398
+msgid "Nothing has been sent yet."
+msgstr "Nic jeszcze nie zostało wysłane."
+
+#: includes/class-settings-page.php:405
+msgid "When"
+msgstr "Kiedy"
+
+#: includes/class-settings-page.php:408
+msgid "Result"
+msgstr "Wynik"
+
+#: includes/class-settings-page.php:409
+msgid "Details"
+msgstr "Szczegóły"
+
+#: includes/class-settings-page.php:434
+msgid "You are not allowed to send notifications from this site."
+msgstr "Nie masz uprawnień do wysyłania powiadomień z tej witryny."
+
+#: includes/class-settings-page.php:445
+msgid "No application token is set, so there is nothing to send with."
+msgstr "Nie ustawiono klucza aplikacji, więc nie ma czym wysłać."
+
+#: includes/class-settings-page.php:453
+msgid "That account cannot receive notifications: it either has no Pushover key or is not allowed to edit content."
+msgstr "To konto nie może odbierać powiadomień: nie ma klucza Pushover albo nie może edytować treści."
+
+#: includes/class-settings-page.php:463
+msgid "Delivered. The phone should have it."
+msgstr "Doręczono. Powiadomienie powinno już być na telefonie."
+
+#. translators: %s: reason returned by Pushover
+#: includes/class-settings-page.php:474
+#, php-format
+msgid "Pushover refused the recipient key: %s. Correct it on that person profile."
+msgstr "Pushover odrzucił klucz odbiorcy: %s. Popraw go na profilu tej osoby."
+
+#. translators: %s: reason returned by Pushover
+#: includes/class-settings-page.php:485
+#, php-format
+msgid "Pushover refused the request: %s. Check the application token."
+msgstr "Pushover odrzucił żądanie: %s. Sprawdź klucz aplikacji."
+
+#. translators: 1: event key, 2: reason returned by Pushover
+#: includes/class-settings-page.php:557
+#, php-format
+msgid "Push notifications are not being delivered. The last failure was on %1$s: %2$s"
+msgstr "Powiadomienia push nie są doręczane. Ostatnie niepowodzenie dotyczyło %1$s: %2$s"
+
+#: includes/class-settings-page.php:563
+msgid "Open the notification settings"
+msgstr "Otwórz ustawienia powiadomień"
+
+#: includes/integrations/class-woocommerce.php:83
+msgid "Orders and payments"
+msgstr "Zamówienia i płatności"
+
+#: includes/integrations/class-woocommerce.php:84
+msgid "Stock"
+msgstr "Magazyn"
+
+#: includes/integrations/class-woocommerce.php:96
+msgid "New order"
+msgstr "Nowe zamówienie"
+
+#: includes/integrations/class-woocommerce.php:102
+msgid "Order paid"
+msgstr "Zamówienie opłacone"
+
+#: includes/integrations/class-woocommerce.php:108
+msgid "Payment failed"
+msgstr "Płatność nieudana"
+
+#: includes/integrations/class-woocommerce.php:115
+msgid "Order cancelled"
+msgstr "Zamówienie anulowane"
+
+#: includes/integrations/class-woocommerce.php:121
+msgid "Refund issued"
+msgstr "Zwrot płatności"
+
+#: includes/integrations/class-woocommerce.php:127
+#: includes/integrations/class-woocommerce.php:442
+msgid "Low stock"
+msgstr "Niski stan magazynowy"
+
+#: includes/integrations/class-woocommerce.php:133
+#: includes/integrations/class-woocommerce.php:443
+msgid "Out of stock"
+msgstr "Brak na stanie"
+
+#. translators: 1: event key, 2: recipient name, 3: result, 4: details
+#: includes/integrations/class-woocommerce.php:215
+#, php-format
+msgid "[push] %1$s to %2$s: %3$s %4$s"
+msgstr "[push] %1$s do %2$s: %3$s %4$s"
+
+#: includes/integrations/class-woocommerce.php:217
+msgid "unknown recipient"
+msgstr "nieznany odbiorca"
+
+#. translators: %s: order number
+#: includes/integrations/class-woocommerce.php:382
+#, php-format
+msgid "Order %s"
+msgstr "Zamówienie %s"
+
+#. translators: 1: order total, 2: number of items, 3: payment method
+#: includes/integrations/class-woocommerce.php:387
+#, php-format
+msgid "%1$s, %2$d item(s), %3$s"
+msgstr "%1$s, pozycji: %2$d, %3$s"
+
+#: includes/integrations/class-woocommerce.php:392
+msgid "no payment method"
+msgstr "bez metody płatności"
+
+#. translators: %s: order number
+#: includes/integrations/class-woocommerce.php:413
+#, php-format
+msgid "Refund on order %s"
+msgstr "Zwrot na zamówieniu %s"
+
+#. translators: %s: refunded amount
+#: includes/integrations/class-woocommerce.php:419
+#, php-format
+msgid "Full refund of %s"
+msgstr "Zwrot całości: %s"
+
+#. translators: 1: refunded amount, 2: order total
+#: includes/integrations/class-woocommerce.php:424
+#, php-format
+msgid "Partial refund of %1$s, order total %2$s"
+msgstr "Zwrot częściowy %1$s, wartość zamówienia %2$s"
+
+#. translators: 1: product name, 2: sku or a dash, 3: units left
+#: includes/integrations/class-woocommerce.php:446
+#, php-format
+msgid "%1$s (%2$s): %3$d left"
+msgstr "%1$s (%2$s): zostało %3$d"
